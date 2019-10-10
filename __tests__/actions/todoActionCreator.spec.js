@@ -1,8 +1,10 @@
 import {
   ADD_TODO,
   DELETE_TODO,
+  TOGGLE_TODO_COMPLETED,
   addTodo,
-  deleteTodo
+  deleteTodo,
+  toggleTodoCompleted,
 } from '../../actions/todoActionCreator';
 
 describe('todoActionCreatorのテスト', () => {
@@ -25,6 +27,18 @@ describe('todoActionCreatorのテスト', () => {
     expect( action ).toStrictEqual(
       {
         type: DELETE_TODO,
+        index: indexValue
+      }
+    );
+  });
+
+  it('toggleTodoCompleted関数', () => {
+    const indexValue = 1;
+    const action = toggleTodoCompleted(indexValue);
+
+    expect( action ).toStrictEqual(
+      {
+        type: TOGGLE_TODO_COMPLETED,
         index: indexValue
       }
     );
