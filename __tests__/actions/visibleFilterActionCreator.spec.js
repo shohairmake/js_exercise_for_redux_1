@@ -3,7 +3,6 @@ import {
   SHOW_ALL,
   SHOW_ACTIVE,
   SHOW_COMPLETED,
-  SET_VISIBILITY_FILTER,
 
   // 関数
   showAll,
@@ -15,8 +14,7 @@ describe('todoActionCreatorのテスト', () => {
   it('showAll関数', () => {
     expect( showAll() ).toStrictEqual(
       {
-        type: SET_VISIBILITY_FILTER,
-        filter: SHOW_ALL
+        type: SHOW_ALL
       }
     );
   });
@@ -24,8 +22,7 @@ describe('todoActionCreatorのテスト', () => {
   it('showActive関数', () => {
     expect( showActive() ).toStrictEqual(
       {
-        type: SET_VISIBILITY_FILTER,
-        filter: SHOW_ACTIVE
+        type: SHOW_ACTIVE
       }
     );
   });
@@ -33,8 +30,7 @@ describe('todoActionCreatorのテスト', () => {
   it('showCompleted関数', () => {
     expect( showCompleted() ).toStrictEqual(
       {
-        type: SET_VISIBILITY_FILTER,
-        filter: SHOW_COMPLETED
+        type: SHOW_COMPLETED
       }
     );
   });
