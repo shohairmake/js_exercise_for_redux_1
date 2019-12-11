@@ -1,4 +1,4 @@
-# レポジトリ内容
+# レポジトリ内容 
 
 この課題は、Web白熱教室のRedux入門の課題その1「[【エクササイズ】ReduxでTodo管理できるツールを作る](https://tsuyopon.xyz/learning-contents/web-dev/javascript/react/js-exercise-for-redux-1/)」の課題レポジトリになります。
 
