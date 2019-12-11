@@ -1,7 +1,7 @@
 class Todo {
     constructor(text) {
-        this._text = text,
-            this._completed = false
+        this._text = text;
+        this._completed = false;
     }
 
     get text() {
