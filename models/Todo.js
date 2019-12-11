@@ -7,6 +7,7 @@ class Todo {
     get text() {
         return this._text;
     }
+    
 
     hasCompleted() {
         return this._completed;
