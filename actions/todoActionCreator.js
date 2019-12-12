@@ -6,19 +6,19 @@ export const addTodo = text => {
     return {
         type: ADD_TODO,
         text
-    }
-}
+    };
+};
 
 export const deleteTodo = index => {
     return {
         type: DELETE_TODO,
         index
-    }
-}
+    };
+};
 
 export const toggleTodoCompleted = index => {
     return {
         type: TOGGLE_TODO_COMPLETED,
         index
-    }
-}
+    };
+};
