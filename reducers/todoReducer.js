@@ -21,11 +21,11 @@ export const todoReducer = (state = [], action) => {
             return state.map((todo, index) => {
                 if (action.index !== index) {
                     return todo;
-                };
+                }
                 const targetTodo = new Todo(todo.text);
                 if (!todo.hasCompleted()) {
                     targetTodo.toggle();
-                };
+                }
                 return targetTodo;
             });
         default:
