@@ -23,7 +23,8 @@ describe('reducers/todoReducer test', () => {
             expect(newState.length).toStrictEqual(1);
             expect(newState[0] instanceof Todo).toStrictEqual(true);
             expect(newState[0].text).toStrictEqual(dummy);
-            expect(newState[0].hasCompleted()).toStrictEqual(false);        });
+            expect(newState[0].hasCompleted()).toStrictEqual(false);
+        });
     });
 
     describe('deleteTodo function', () => {
@@ -39,7 +40,7 @@ describe('reducers/todoReducer test', () => {
             });
         });
     });
-    
+
     describe('toggleTodoCompleted function', () => {
         it('Todo instance becomes true, if toggleTodoCompleted action is passed', () => {
             const initialState = dummyArrayCreate();
