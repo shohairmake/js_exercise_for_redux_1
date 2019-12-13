@@ -25,6 +25,7 @@ describe('reducers/todoReducer test', () => {
             expect(newState[0].text).toStrictEqual(dummy);
             expect(newState[0].hasCompleted()).toStrictEqual(false);        });
     });
+
     describe('deleteTodo function', () => {
         it('Passing the deleteTodo action will delete the Todo instance to that action', () => {
             const initialState = dummyArrayCreate();
@@ -38,6 +39,7 @@ describe('reducers/todoReducer test', () => {
             });
         });
     });
+    
     describe('toggleTodoCompleted function', () => {
         it('Todo instance becomes true, if toggleTodoCompleted action is passed', () => {
             const initialState = dummyArrayCreate();

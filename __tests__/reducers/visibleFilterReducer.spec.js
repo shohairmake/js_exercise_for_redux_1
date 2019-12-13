@@ -24,7 +24,6 @@ describe('reducer/visibleFilterReducer test', () => {
         const state = createInithialState();
         const action = showAll();
         const newState = visibleFilterReducer(state, action);
-
         expect(newState).toStrictEqual(SHOW_ALL);
     });
 
@@ -33,7 +32,6 @@ describe('reducer/visibleFilterReducer test', () => {
         const state = createInithialState();
         const action = showActive();
         const newState = visibleFilterReducer(state, action);
-
         expect(newState).toStrictEqual(SHOW_ACTIVE);
     });
 
@@ -42,7 +40,6 @@ describe('reducer/visibleFilterReducer test', () => {
         const state = createInithialState();
         const action = showCompleted();
         const newState = visibleFilterReducer(state, action);
-
         expect(newState).toStrictEqual(SHOW_COMPLETED);
     });
 });
